@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pgprincipalstyle.css">
+    <link rel="stylesheet" href="cours_exercices.css">
+    <link rel="stylesheet" href="Devoir.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first-container">
+        <p id="nomprof"> <a href="about.html">Christophe Bertault</a></p>
+        <p id="matiere">SITE MATHÉMATIQUE</p>
+        <a href="connexion.html" style="text-decoration: none;"><p id="espace_prof">Espace prof</p></a>
+    </div>
+    
+    <div class="container">
+        <ul>
+            <li><a href="cours_exercices.html">Cours et exercices </a> </li>
+            <li id="devoirs"> Devoirs
+              <ul>
+                <li><a href="Devoirs_Maison.html">Devoirs a la maison</a></li>
+                <li><a href="Devoirs_sur.html">Devoirs surveilles</a></li>
+              </ul>
+            </li>
+            <li> <a href="vide_classe.html">Vie de la classe</a></li>
+            <li> <a href="article.html">Articles</a></li>
+        </ul>
+    </div>   
+<div id="container_cours_exercices">
+    <p style="font-size: 45px;color: rgb(38, 122, 38);margin-bottom: 0;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-left: 12%;">Devoirs Maison</p>
+    <p style="font-size: 28px;color: #131212;margin-bottom: 0;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-left: 12%;"> Les devoirs  ci-dessous devant etre rendue avant le jeudi prochaine par exemple  </p><br> <br> 
+    <a  id="devoiric" href="#"><img src="devoir.png" id="icons"></a>
+    <a  id="correctic" href="#"><img src="correct.png" id="icons"></a>
+    <p id="titre">La manipulation des Piles <button id="btn_edit" onclick="show('1');">Modifier</button></p>
+    <fieldset id="1" class="form_edit">
+        <legend id="titre_chapitre"></legend>
+        <p>Titre: <input type="text" name=""></p>
+        <p>Delai: <input type="date" name=""></p>
+        <p>DEVOIR: <input type="file" name=""></p>
+        <p>Correction: <input type="file" name=""></p>
+        <p>Description: <textarea></textarea></p>
+        <button id="btn_save">Save</button>
+        <button id="btn_supp">Supprimer</button>
+        <button onclick="annule('1');" id="btn_annule">Annule</button>
+    </fieldset> <br><br>
+    <a  id="devoiric" href="#"><img src="devoir.png" id="icons"></a>
+    <a  id="correctic" href="#"><img src="correct.png" id="icons"></a>
+    <p id="titre">La manipulation des Piles <button id="btn_edit" onclick="show('2');">Modifier</button></p>  
+    <fieldset id="2" class="form_edit">
+        <legend id="titre_chapitre"></legend>
+        <p>Titre: <input type="text" name=""></p>
+        <p>Delai: <input type="date" name=""></p>
+        <p>DEVOIR: <input type="file" name=""></p>
+        <p>Correction: <input type="file" name=""></p>
+        <p>Description: <textarea></textarea></p>
+        <button id="btn_save">Save</button>
+        <button id="btn_supp">Supprimer</button>
+        <button onclick="annule('2');" id="btn_annule">Annule</button>
+    </fieldset> <br><br>  
+    <p id="guide">===>Creation d'un nouveau champ: <button id="btn_edit" onclick="show('ajout');">Créer</button> </p>
+    <fieldset id="ajout" class="form_edit">
+        <legend id="titre_chapitre"></legend>
+        <p>Titre: <input type="text" name=""></p>
+        <p>Delai: <input type="date" name=""></p>
+        <p>DEVOIR: <input type="file" name=""></p>
+        <p>Correction: <input type="file" name=""></p>
+        <p>Description: <textarea></textarea></p>
+        <button id="btn_save">Save</button>
+        <button onclick="annule('ajout');" id="btn_annule">Annule</button>
+    </fieldset> <br><br>
+</div>
+<script>
+    function show(chapitre) {
+        var x=document.getElementById(chapitre);
+        x.style.display="initial";
+    }
+    function annule(chapitre)
+    {
+        var x=document.getElementById(chapitre);
+        x.style.display="none";
+    }
+</script>
+</body>
+</html>

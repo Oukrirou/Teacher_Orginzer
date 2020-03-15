@@ -1,0 +1,56 @@
+#icons {
+    margin-right: 10px;
+}
+#devoiric{
+	margin-left: 20%;
+}
+#coursic{
+    margin-left: 12%;
+}
+#jsfic{
+    margin-left: 10px;
+}
+#titre {
+    font-size: 30px;
+    margin-top: -50px;
+    margin-left: 35%;
+}
+#guide {
+    font-size: 25px;
+    margin-top: -5px;
+    margin-left: 40%;
+}
+#btn_edit {
+	margin-left:10px;
+	height: 30px;
+	width: 100px;
+	border: 2px solid green;
+	transform: translate(0,-20%);
+}
+
+#btn_save,#btn_annule,#btn_supp {
+	height: 30px;
+	width: 100px;
+	border: 2px solid green;
+}
+#btn_save{
+	margin-left:35%;
+}
+#btn_edit:hover,#btn_save:hover,#btn_annule:hover,#btn_supp:hover {
+	height: 35px;
+	width: 105px;
+	border: 2px solid red;
+}
+.form_edit {
+	border: none;
+	width:40%;
+	display: none;
+	margin-left: 40%;
+	font-size: 20px;
+}
+.form_edit p {
+	margin-left:10%;
+}
+#btn_save{
+	margin-left: 11%;
+}
