@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pgprincipalstyle.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first-container">
+        <p id="nomprof"> <a href="about.html">Christophe Bertault</a></p>
+        <p id="matiere">SITE MATHÉMATIQUE</p>
+        <a href="connexion.html" style="text-decoration: none;"><p id="espace_prof">Espace prof</p></a>
+    </div>
+    
+    <div class="container">
+        <ul>
+            <li id="menu"><a onclick="show_hid('menu_element',1)" href="#"><img id="menuic" src="menu.png">Menu: </a> </li>
+            <div id="menu_element">
+                <li><a href="cours_exercices.html">Cours et exercices </a> </li>
+                <li class="devoirs">Devoirs
+                  <ul>
+                    <li><a href="Devoirs_Maison.html">Devoirs a la maison</a></li>
+                    <li><a href="Devoirs_sur.html">Devoirs surveilles</a></li>
+                  </ul>
+                </li>
+                <li> <a href="vide_classe.html">Vie de la classe</a></li>
+                <li> <a href="article.html">Articles</a></li>
+            </div>
+        </ul>
+    </div>
+<div id="container_cours_exercices">
+    <p id="categ">Cours et exercices</p>
+    <p id="intro"> Les documents ci-dessous sont conformes aux programmes actuels de la filière informatique est une 
+    belle filiere tkhrbii9 </p><br> <br>
+    <hr style="width: 80%; align-content: center;">
+    <div id="image">
+        <a  id="coursic" href="#"><img src="cours.png" id="icons"></a>
+        <a id="exosic" href="#"><img src="exos.png" id="icons"></a>
+        <a  id="jsfic" href="#"><img src="jsf.png" id="icons"></a>
+    </div>
+    <p id="titre">Programme de mathématiques de la filière MPSI</p>
+    <hr style="width: 80%; align-content: center;">
+    <div id="image">
+        <a  id="coursic" href="#"><img src="cours.png" id="icons"></a>
+        <a id="exosic" href="#"><img src="exos.png" id="icons"></a>
+        <a  id="jsfic" href="#"><img src="jsf.png" id="icons"></a>
+    </div>
+    <p id="titre">Programme de mathématiques de la filière PCSI</p> 
+    <hr style="width: 80%; align-content: center;">
+</div>
+<script>
+        var state_menu=0;
+        isMobile();
+        function isMobile()
+        {
+            var x=(document.body.clientWidth);
+            if(x<480 && state_menu==0){
+                document.getElementById('menu_element').style.display="none";
+                document.getElementById('menu').style.marginLeft="34%";
+            }
+            else{
+                document.getElementById('menu').style.marginLeft="0%";
+                document.getElementById('menu_element').style.display="block";
+            }
+            setTimeout(isMobile,1000);
+        }
+        function show_hid(id,)
+        {
+            if(state_menu==0){document.getElementById(id).style.display="block";state_menu=1;}
+            else{document.getElementById(id).style.display="none";state_menu=0;}
+        }
+    </script>
+</body>
+</html>
