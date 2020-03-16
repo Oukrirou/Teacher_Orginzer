@@ -5,8 +5,9 @@ if (isset($_POST["submit"])) {
 
         echo "<h1>helllo motherfucker  </h1> ";
     }
+    else echo "<h3> utilisateur /mot de passe errone </h3>>";
 }
-else echo "is not set yet";
+
 
 
 
@@ -25,9 +26,10 @@ else echo "is not set yet";
     <meta charset="UTF-8">
     <link rel="stylesheet" href="loginstyle.css">
     <title>Document</title>
+    <style> h3{ color: #ff2126;}</style>
 </head>
 <body>
-<h1>  this a new h S</h1>
+
 
 
 <div id="plate_login">
@@ -37,8 +39,8 @@ else echo "is not set yet";
 
         <form action="connexion.php" method="post">
             <label for="username">Utilisateur :</label>
-            <input  id="username" type="text" name="username" >
-            <br> <br> Mot de passe : <input type="password" name="password"> <br> <br>
+            <input  id="username" type="text" name="username" placeholder="enter votre username">
+            <br> <br> Mot de passe : <input type="password" name="password" placeholder="entrer votre mot de passe"> <br> <br>
             <center><input type="submit" name="submit" value="Connecter"></center>
         </form>
     </fieldset>
