@@ -3,7 +3,7 @@
 if (isset($_POST["submit"])) {
     if ($_POST["username"]=="ostad" && $_POST["password"]=="1234") {
 
-        echo "<h1>helllo motherfucker </h1> ";
+        echo "<h1>helllo motherfucker  </h1> ";
     }
 }
 else echo "is not set yet";
